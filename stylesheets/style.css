@@ -2,10 +2,82 @@
 
 body {
     /* Google homepage has sans-serif font. */
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 1.6rem;
     height: 100vh;
     position: relative;
+}
+
+.nav {
+    font-size: 1.4rem;
+}
+
+.nav__main-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 1.75rem;
+    padding: 0 3rem;
+}
+
+.nav__main-item {
+    align-items: center;
+    display: flex;
+}
+
+.nav__nested-list {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav__nested-item + .nav__nested-item {
+    margin-left: 1.25rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #495057;
+    text-decoration: underline;
+}
+
+.icon-item {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.apps-icon {
+    /* Filter converts icon's color to #66707A. */
+    /* stylelint-disable max-line-length */
+    filter: invert(46%) sepia(8%) saturate(664%) hue-rotate(169deg) brightness(90%) contrast(87%);
+    /* stylelint-enable max-line-length */
+    width: 50%;
+}
+
+.apps-icon:hover {
+    /* Filter converts icon's color to #000. */
+    /* stylelint-disable max-line-length */
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
+    /* stylelint-enable max-line-length */
+}
+
+.first-initial {
+    background-color: #7C949C;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 1.5rem;
+    padding: .75rem 1.1rem;
+}
+
+.first-initial:hover {
+    cursor: pointer;
 }
 
 .logo {
@@ -52,8 +124,9 @@ body {
 }
 
 .search__icon--1 {
+    /* Filter converts icon's color to #9AA0A6. */
     /* stylelint-disable max-line-length */
-    filter: invert(79%) sepia(12%) saturate(279%) hue-rotate(169deg) brightness(81%) contrast(85%);
+    filter: invert(67%) sepia(9%) saturate(220%) hue-rotate(169deg) brightness(93%) contrast(92%);
     /* stylelint-enable max-line-length */
     top: 25%;
     left: 29.5%;
@@ -72,9 +145,9 @@ body {
 .search-button {
     background-color: #EFEFEF;
     border: .1rem solid #EFEFEF;
-    border-radius: .75rem;
+    border-radius: .5rem;
     color: #495057;
-    padding: .75rem 1.75rem;
+    padding: 1rem 1.75rem;
     font-size: 1.4rem;
 }
 
