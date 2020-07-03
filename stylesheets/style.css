@@ -8,9 +8,11 @@ body {
     position: relative;
 }
 
-.nav {
-    font-size: 1.4rem;
-}
+/**
+ * NAVIGATION MENU
+ */
+
+.nav { font-size: 1.4rem; }
 
 .nav__main-list {
     display: flex;
@@ -20,20 +22,20 @@ body {
     padding: 0 3rem;
 }
 
+/* Nested lists centered vertically. */
 .nav__main-item {
     align-items: center;
     display: flex;
 }
 
 .nav__nested-list {
+    /* Nested items centered vertically. */
     align-items: center;
     display: flex;
     list-style-type: none;
 }
 
-.nav__nested-item + .nav__nested-item {
-    margin-left: 1.25rem;
-}
+.nav__nested-item + .nav__nested-item { margin-left: 1.25rem; }
 
 .nav__link:link,
 .nav__link:visited {
@@ -49,23 +51,31 @@ body {
 .icon-item {
     align-items: flex-end;
     display: flex;
+    /* Centered horizontally */
     justify-content: center;
-    text-align: center;
 }
 
 .apps-icon {
     /* Filter converts icon's color to #66707A. */
-    /* stylelint-disable max-line-length */
-    filter: invert(46%) sepia(8%) saturate(664%) hue-rotate(169deg) brightness(90%) contrast(87%);
-    /* stylelint-enable max-line-length */
+    filter:
+        invert(46%)
+        sepia(8%)
+        saturate(664%)
+        hue-rotate(169deg)
+        brightness(90%)
+        contrast(87%);
     width: 50%;
 }
 
 .apps-icon:hover {
     /* Filter converts icon's color to #000. */
-    /* stylelint-disable max-line-length */
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
-    /* stylelint-enable max-line-length */
+    filter:
+        invert(0%)
+        sepia(0%)
+        saturate(0%)
+        hue-rotate(324deg)
+        brightness(96%)
+        contrast(104%);
 }
 
 .first-initial {
@@ -76,12 +86,12 @@ body {
     padding: .75rem 1.1rem;
 }
 
-.first-initial:hover {
-    cursor: pointer;
-}
+/* Letter of first name appears clickable. */
+.first-initial:hover { cursor: pointer; }
 
 .logo {
     display: block;
+    /* Positioned relative to `body` element. */
     position: absolute;
     top: 33%;
     left: 50%;
@@ -89,13 +99,19 @@ body {
     width: 23%;
 }
 
+/**
+ * SEARCH FORM
+ */
+
 .form {
+    /* Positioned relative to `body` element. */
     position: absolute;
     top: 48%;
     width: 100%;
 }
 
 .search {
+    /* Covering extra bottom space of Google logo. */
     margin-top: -3rem;
     position: relative;
     text-align: center;
@@ -114,26 +130,29 @@ body {
         -.15rem -.05rem .5rem rgba(0, 0, 0, .1);
 }
 
-.search__bar:focus {
-    outline: none;
-}
+/* Remove default outline from user-agent stylesheet. */
+.search__bar:focus { outline: none; }
 
 .search__icon {
     font-size: 1.6rem;
+    /* Positioned relative to `.search` selector. */
     position: absolute;
+    top: 25%;
 }
 
 .search__icon--1 {
     /* Filter converts icon's color to #9AA0A6. */
-    /* stylelint-disable max-line-length */
-    filter: invert(67%) sepia(9%) saturate(220%) hue-rotate(169deg) brightness(93%) contrast(92%);
-    /* stylelint-enable max-line-length */
-    top: 25%;
+    filter:
+        invert(67%)
+        sepia(9%)
+        saturate(220%)
+        hue-rotate(169deg)
+        brightness(93%)
+        contrast(92%);
     left: 29.5%;
 }
 
 .search__icon--2 {
-    top: 25%;
     right: 29.5%;
 }
 
@@ -151,22 +170,16 @@ body {
     font-size: 1.4rem;
 }
 
-.search-button:hover {
-    border: .1rem solid #A8ADB3;
-}
+.search-button:hover { border: .1rem solid #A8ADB3; }
 
 .search-button:active {
     border: .1rem solid #4C8BF5;
     outline: none;
 }
 
-.search-button:focus {
-    outline: none;
-}
+.search-button:focus { outline: none; }
 
-.search-button--1 {
-    margin-right: 1rem;
-}
+.search-button--1 { margin-right: 1rem; }
 
 .lang-option {
     font-size: 1.4rem;
@@ -180,6 +193,4 @@ body {
     text-decoration: none;
 }
 
-.lang-french:hover {
-    text-decoration: underline;
-}
+.lang-french:hover { text-decoration: underline; }
