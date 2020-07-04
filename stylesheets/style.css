@@ -18,8 +18,7 @@ body {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    margin-top: 1.75rem;
-    padding: 0 3rem;
+    padding: 1.75rem 3rem 0;
 }
 
 /* Nested lists centered vertically. */
@@ -165,7 +164,7 @@ body {
     background-color: #EFEFEF;
     border: .1rem solid #EFEFEF;
     border-radius: .5rem;
-    color: #495057;
+    color: #5D666F;
     padding: 1rem 1.75rem;
     font-size: 1.4rem;
 }
@@ -194,3 +193,46 @@ body {
 }
 
 .lang-french:hover { text-decoration: underline; }
+
+/*
+ * FOOTER
+ */
+
+.footer {
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.country-box {
+    background-color: #EFEFEF;
+    border: .1rem solid #E0E0E0;
+    color: #5D666F;
+    font-size: 1.5rem;
+    padding: 1.3rem 2.5rem;
+}
+
+.footer__main-list {
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 1.25rem 2.5rem;
+}
+
+.footer__nested-list { list-style-type: none; }
+
+.footer__nested-item { display: inline-block; }
+
+.footer__nested-item + .footer__nested-item { margin-left: 2rem; }
+
+.footer__link:link,
+.footer__link:visited {
+    color: #495057;
+    text-decoration: none;
+}
+
+.footer__link:hover { text-decoration: underline; }
+
+.footer__link:active { color: #F00; }
